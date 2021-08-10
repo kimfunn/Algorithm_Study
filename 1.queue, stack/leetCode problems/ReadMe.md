@@ -2,7 +2,7 @@
 
 
 
-## 1. Baseball-Game
+## 682. Baseball-Game
 
 간단히 문제를 해석하자면,
 
@@ -53,11 +53,11 @@ class Solution:
 
 
 
-## 2. Palindrome Linked List
+## 234. Palindrome Linked List
 
 
 
-#### 풀이 2. 데크(Deque)를 이용한 최적화
+#### 풀이 1. 데크(Deque)를 이용한 최적화
 
 1. 데크 자료형을 선언합니다.
 2. 반복문을 통해 인풋 연결리스트를 끝까지 순회하여 데크 자료형에 연결리스트의 값을 하나씩 넣습니다.
@@ -97,7 +97,7 @@ class Solution:
 
 
 
-#### 풀이 3. 러너를 이용한 풀이
+#### 풀이 2. 러너를 이용한 풀이
 
 1. 느린 러너와 빠른 러너 모두 head에서 시작합니다.
 2. 반복문을 통해 연결리스트가 끝날 때 까지 빠른 러너는 두 칸씩, 느린 러너는 한 칸씩 이동합니다.
@@ -131,5 +131,16 @@ class Solution:
         while rev and rev.val == slow.val:
             slow, rev = slow.next, rev.next
         return not rev
+```
+
+## 844. Backspace String Compare
+
+s, t,가 동일한 출력으로 나오는지 코딩해보기
+
+문자열에서 '#'는 앞의 것을 지우는 것
+
+
+
+```python
 ```
 
